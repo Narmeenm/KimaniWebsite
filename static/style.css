@@ -1,0 +1,210 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --fontText:'Alice', serif;
+  --bgcolor:#FCF9F4;
+  --textColor: #8D6440;
+}
+html{
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background:var(--bgcolor);
+  font-family:var(--fontText);
+  overflow:scroll;
+  overflow-x:hidden!important;
+
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration:none;
+}
+
+@media only screen and (min-width: 414px) {
+
+  .grid-sidebar{
+    display: grid;
+    grid-template-columns: minmax(177px,25%) 1fr;
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+
+  }
+    .side1{
+
+
+    }
+    .logo img{
+      position: absolute;
+      width: 202px;
+      height: 117px;
+      left: 0px;
+      top: 0px;
+      border:2px solid black;
+    }
+
+    .navside{
+       background: url('../img/navsideS.png') no-repeat;
+       background-size:100%;
+       width: 45%;
+       height: 700px;
+       position:absolute;
+       left:0;
+       top:34px;
+       bottom:0px;
+    }
+    .navside .nav-links{
+      border:2px solid white;
+      width: 88px;
+      height: 288px;
+      position: absolute;
+      top:30%;
+      left:4%;
+    }
+    .nav-links li{
+      font-family: var(--fontText);
+      font-style: normal;
+      font-weight: normal;
+      font-size: 100%;
+      line-height: 3;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .nav-links li a{
+      color: var(--bgcolor);
+    }
+    .side2{
+
+    }
+    .side2 .title{
+      border: 2px solid red;
+      height: 22%;
+      width: 60%;
+      background:url('../img/Stitle.png') no-repeat;
+      position: absolute;
+      left: 148px;
+      top: 166px;
+    }
+    .kimipic img{
+      position: absolute;
+      width: 294px;
+      height: 297px;
+      left: 113px;
+      top: 349px;
+    }
+    .side2 .footer{
+      background: url('../img/footer.png') no-repeat;
+      background-size: 90%;
+      position: absolute;
+      width: 339px;
+      height: 90px;
+      left: 108px;
+      top: 646px;
+    }
+    .address p{
+      font-family: var(--fontText);
+      color: var(--textColor);
+      position: absolute;
+      left: 4%;
+      bottom:20%;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    .footer-links{
+      position: absolute;
+      left:60%;
+      bottom:40%;
+      width:30%;
+    }
+    .footer-links li{
+      display: inline;
+      padding-right: 2%;
+    }
+    .fa-linkedin,.fa-at{
+      color:var(--textColor);
+      font-size: 25px;
+    }
+    .copyright p{
+      font-family:var(--fontText);
+      color: var(--textColor);
+      position: absolute;
+      left:120px;
+      bottom:5%;
+      font-weight:bold;
+    }
+}
+
+  @media only screen and (min-width: 800px) {
+
+  }
+
+  @media only screen and (min-width: 1000px) {
+      .logo img{
+        position: absolute;
+        width: 437px;
+        height: 171px;
+        left: 0px;
+        top: 0px;
+        border: 3px solid black;
+
+      }
+
+     .navside{
+        background: url('../img/titleB2.png') no-repeat;
+        background-size:auto;
+        width: 448px;
+        height: 930px;
+        position:absolute;
+        left:0;
+        top:50px;
+        bottom:0px;
+        border: 3px solid red;
+      }
+
+      .side2 .title{
+        border: 2px solid red;
+        background:url('../img/Btitle.png') no-repeat;
+        position: absolute;
+        width: 434px;
+        height: 337px;
+        left:70%;
+        top: 129px;
+      }
+      .side2 .kimipic{
+        width:50%;
+        border: 2px solid black;
+      }
+      .kimipic img{
+        position: absolute;
+        width: 674px;
+        height: 700px;
+        left: 50%;
+        top: 50%;
+      }
+
+      .side2 .footer{
+        background: url('../img/footer.png') no-repeat;
+        background-size: 90%;
+        position: absolute;
+        width: 339px;
+        height: 90px;
+        left: 108px;
+        top: 646px;
+      }
+
+  }
