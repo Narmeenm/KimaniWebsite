@@ -90,7 +90,6 @@ a{
 
     }
     .side2 .title{
-      border: 2px solid red;
       height: 22%;
       width: 60%;
       background:url('../img/Stitle.png') no-repeat;
@@ -98,12 +97,17 @@ a{
       left: 148px;
       top: 166px;
     }
-    .kimipic img{
+    .kimipic{
       position: absolute;
       width: 294px;
       height: 297px;
       left: 113px;
       top: 349px;
+
+    }
+    img{
+      width: 294px;
+      height: 297px;
     }
     .side2 .footer{
       background: url('../img/footer.png') no-repeat;
@@ -114,12 +118,16 @@ a{
       left: 108px;
       top: 646px;
     }
+    .address{
+      position: absolute;
+      left: 4%;
+      bottom:15px;
+      border: 2px solid ;
+
+    }
     .address p{
       font-family: var(--fontText);
       color: var(--textColor);
-      position: absolute;
-      left: 4%;
-      bottom:20%;
       font-size: 14px;
       line-height: 16px;
       text-align: center;
@@ -127,25 +135,34 @@ a{
     }
     .footer-links{
       position: absolute;
-      left:60%;
-      bottom:40%;
-      width:30%;
+      left:130px;
+      bottom:30px;
+      width:40%;
+      border: 2px solid green;
+      text-align: center;
     }
     .footer-links li{
-      display: inline;
+      display: inline!important;
       padding-right: 2%;
     }
     .fa-linkedin,.fa-at{
       color:var(--textColor);
       font-size: 25px;
     }
-    .copyright p{
-      font-family:var(--fontText);
-      color: var(--textColor);
+    .copyright{
       position: absolute;
       left:120px;
-      bottom:5%;
+      bottom:0px;
+      border: 2px solid black;
+      width: 168px;
+      height: 100%:
+    }
+    .copyright p{
+      font-size: 12px;
+      font-family:var(--fontText);
+      color: var(--textColor);
       font-weight:bold;
+      width:100%;
     }
 }
 
@@ -154,82 +171,109 @@ a{
   }
 
   @media only screen and (min-width: 1000px) {
+      .grid-sidebar{
+        overflow-y: hidden;
+      }
       .logo img{
-        position: absolute;
+        position: fixed;
         width: 437px;
         height: 171px;
         left: 0px;
         top: 0px;
-        border: 3px solid black;
-
       }
 
      .navside{
-        background: url('../img/titleB2.png') no-repeat;
+        background: url('../img/navsideB.png') no-repeat;
         background-size:auto;
         width: 448px;
         height: 930px;
-        position:absolute;
+        position:fixed;
         left:0;
         top:50px;
         bottom:0px;
-        border: 3px solid red;
+
+      }
+      .navside .nav-links{
+        border:2px solid white;
+        width: 131px;
+        height: 466px;
+        font-size: 19px;
+        position: absolute;
+        top:40%;
+        left:10%;
       }
 
       .side2 .title{
-        border: 2px solid red;
         background:url('../img/Btitle.png') no-repeat;
         position: absolute;
         width: 434px;
         height: 337px;
-        left:70%;
+        left:60%;
         top: 129px;
       }
+
       .side2 .kimipic{
-        width:50%;
-        border: 2px solid black;
+        padding: 0;
+        position: absolute;
+        width: 674px;
+        height:690px;
+        left: 30%;
+        top: 29.4%;
+        bottom:0;
+        margin-bottom: 0px;
+        font-size:0;
       }
       .kimipic img{
+        width: 674px;
+        height: 690px;
+        line-height: 0;
         position: absolute;
-        width: 600px;
-        height: 700px;
-        left: 30%;
-        top: 30%;
+        bottom:0px;
       }
-
       .side2 .footer{
         background: url('../img/footerSide.png') no-repeat;
-        background-size: 100%;
-        border: 2px solid black;
+        background-position: bottom;
+        background-size: contain;
         width: 640px;
-        height: 572px;
+        height: 590px;
         position: absolute;
         left:65%;
-        top:200px;
+        top:389px;
 
       }
-
-      .address p{
+      .address{
+        border: 2px solid green;
         position: absolute;
-        left: 10%;
-        bottom:20%;
+        left:440px;
+        top:400px;
+        width: 30%;
+        height:20%;
+      }
+      .address p{
         font-size: 20px;
       }
       .footer-links{
         position: absolute;
-        left:70%;
-        bottom:10%;
+        left:440px;
+        bottom:200px;
         width:30%;
-        border: 2px solid black;
+        border: 2px solid green;
+      }
+      .fa-linkedin,.fa-at{
+        font-size: 30px;
       }
       .copyright{
         border: 2px solid red;
-        width:56%;
-        height:10%;
+        width:40%;
+        height:auto;
         position: absolute;
-        right:0;
-        bottom:0;
+        left:370px;
+        bottom:10px;
         padding-left: 10px;
       }
+      .copyright p{
+        width:100%;
+        font-size:19px;
 
+      }
   }
