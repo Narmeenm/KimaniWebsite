@@ -9,6 +9,7 @@
      <link rel="preconnect" href="https://fonts.gstatic.com">
      <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js" integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw==" crossorigin="anonymous"></script>
      <title>Kimani Livingstone</title>
   </head>
   <body>
@@ -27,21 +28,30 @@
   <section class="about-Section">
         <div class="about-container">
           <div class="paragraph">
-             <h1>More About me</h1>
-             <p>Enthusiastic professional eager to contribute to team success through hard work, attention to detail and excellent organizational skills. Also, tech-savvy and has a clear understanding of sound & prudent accounting principles combined with training in regulatory oversight. Motivated to learn, grow and excel while contributing to creating a safe and sustainable future for all Jamaicans.</p>
+            <div class="content">
+               <h1>More About me</h1>
+               <p>Enthusiastic professional eager to contribute to team success through hard work, attention to detail and excellent organizational skills. Also, tech-savvy and has a clear understanding of sound & prudent accounting principles combined with training in regulatory oversight. Motivated to learn, grow and excel while contributing to creating a safe and sustainable future for all Jamaicans.</p>
+           </div>
+             <div class="custom-shape-divider-bottom-1611924391">
+                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                     <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                 </svg>
+             </div>
           </div>
-          <div class="overview">two
+          <div class="overview">Overview
 
           </div>
-          <div class="skills-graph">three
-
+          <!-- the skills graph -->
+          <div class="skills-graph">
+            <canvas id="barChart" width="800" height="450"></canvas>
           </div>
-
 
         </div>
   </section>
 
-
-    <div class="border"></div>
+   <div id="content-desktop">
+     <div class="border">hello</div>
+   </div>
   </body>
+  <script src="javascript.js"></script>
 </html>
