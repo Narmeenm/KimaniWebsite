@@ -175,21 +175,9 @@ a{
     .paragraph{
       width: 100%;
       border: 2px solid bold;
-      padding: 5% 20%;
       position: relative;
     }
-    .paragraph h1{
-      color:var(--textColor);
-      line-height: 2;
-      font-weight:bold;
-      text-align: center;
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-    .paragraph svg{
-      width:600px;
-      height:500px;
 
-    }
     .paragraph svg foreignObject{
       color: var(--bgcolor);
       line-height: 1.7;
@@ -348,16 +336,26 @@ a{
         border: 2px solid blue;
         width:100%;
         height: 600px;
+        padding-left: 18%;
       }
-      .paragraph h1{
+
+      h1{
         font-size:250%;
         margin-bottom:5%;
+        color: var(--textColor);
+        line-height: 2;
+        font-weight:bold;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 600px;
+        border: 2px solid red;
+        text-align: center;
       }
       .paragraph svg{
         position:absolute;
-        left: 157px;
+        left: 18%;
         top:10%;
-
+        width:600px;
+        height:500px;
 
       }
       .paragraph svg foreignObject{
@@ -368,16 +366,21 @@ a{
         background-color: red;
         fill:#FCF9F4;
       }
+      .content{
+        padding: 30px 30px 60px;
+
+      }
       .overview{
         flex: 1;
-        background: url('../picoverview.svg') no-repeat;
-        background-position:160px;
-        background-size:contain;
         width: 100%;
         height: 100%;
         padding-left: 18%;
+        font-size: 24px;
+        line-height: 37px;
       }
       .overview4{
+        background: url('../picoverview.svg') no-repeat;
+        background-size:contain;
         border: 2px solid black;
         width:600px;
         height:600px;
@@ -385,8 +388,8 @@ a{
         grid-template-areas:
           "education5 language4"
           "certificates7 experience5";
-        grid-template-rows: 250px 250px;
-        grid-template-columns: 290px 290px;
+        grid-template-rows: 300px 300px;
+        grid-template-columns: 300px 300px;
       }
       h2{
         color:var(--textColor);
@@ -400,15 +403,17 @@ a{
       }
       .education5 h2{
         position: absolute;
-        left:100px;
-        top:20px;
+        left:95px;
+        top:100px;
       }
       .education5 p{
-         background-color:red;
          position: absolute;
-         left:50%;
-         top:50%;
+         left:34%;
+         top:120px;
          transform: translate(-50%.-50%);
+         color: var(--textColor);
+         text-align: center;
+         width:170px;
       }
       .language4{
         grid-area: language4;
@@ -416,33 +421,74 @@ a{
         border: 2px solid black;
       }
 
-      .language4 button{
-        width: 50%;
+      .language4 .fourthLang{
+        width: 60%;
         height:50%;
+        border: 1px solid black;
         cursor: pointer;
         background:transparent;
+        position: absolute;
+        left:40px;
+        top:90px;
+
       }
       .language4 h2{
          position: absolute;
-         left:100px;
-         top:60px;
+         left:20px;
+         top:10px;
       }
-      .language4 p{
+      .language4 button p{
+        color: var(--textColor);
+        font-size: 24px;
         position: absolute;
-         left:100px;
-         top:90px;
+         left:70px;
+         top:50px;
       }
       .certificates7{
         grid-area: certificates7;
         border: 2px solid gold;
+        position: relative;
+      }
+      .certificates7 .lsCertificate{
+        width: 60%;
+        height:50%;
+        border: 1px solid black;
+        cursor: pointer;
+        background:transparent;
+        position: absolute;
+        left:40px;
+        top:90px;
+
+      }
+      .certificates7 h2{
+        position: absolute;
+        top: 30px;
+        left:50px;
+      }
+      .certificates7 p{
+        color: var(--textColor);
+        font-size: 24px;
       }
       .experience5{
         grid-area: experience5;
         border: 2px solid blue;
+        position:relative;
       }
-      .content{
-        padding: 30px 30px 60px;
-
+      .experience5 h2{
+        position: absolute;
+        top: 30px;
+        left:50px;
+      }
+      .experience5 p{
+        color: var(--textColor);
+        width:50%;
+        position: absolute;
+        text-align: center;
+        top: 60px;
+        left:70px;
+      }
+      .skills-graph{
+        padding-left: 18%;
       }
       #content-desktop{
         display: block;
