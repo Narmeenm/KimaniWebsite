@@ -2,12 +2,12 @@ var barChart = document.getElementById('barChart').getContext('2d');
 var myBarChart = new Chart(barChart, {
     type: 'bar',
     data: {
-      labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+      labels: ["Leadership", "Goal-Oriented", "Creativity", "Criticial Thinking", "Design Thinking","Digital Business Development"],
       datasets: [
         {
-          label: "Population (millions)",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-          data: [2478,5267,734,784,433]
+          label: "skills (types)",
+          backgroundColor: ["#8D6440", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#8D6440"],
+          data: [8,7,6,5,8,9]
         }
       ]
     },
@@ -15,7 +15,7 @@ var myBarChart = new Chart(barChart, {
       legend: { display: false },
       title: {
         display: true,
-        text: 'Predicted world population (millions) in 2050'
+        text: 'My Skills'
       }
     }
 });

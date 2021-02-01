@@ -2,6 +2,7 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
+  font-family:'Alice', serif;
 }
 
 :root{
@@ -164,7 +165,7 @@ a{
     }
     /* the iphone style for the about page */
     .about-container{
-      margin-top: 10%;
+      margin-top: 5%;
       margin-left: 187px;
       border: 2px solid var(--textColor);
       display: flex;
@@ -174,27 +175,35 @@ a{
     .paragraph{
       width: 100%;
       border: 2px solid bold;
-      position: relative;
-      background-color: var(--textColor);
+      padding: 5% 20%;
     }
     .paragraph h1{
+      font-size: 200%;
+      color:var(--bgcolor);
       line-height: 2;
       font-weight:bold;
-      color: var(--bgcolor);
+      color: black;
+      text-align: center;
     }
-    .paragraph p{
+    .paragraph svg{
+      width:600px;
+      height:500px;
+
+    }
+    .paragraph svg foreignObject{
       color: var(--bgcolor);
       line-height: 1.7;
-    }
-    .custom-shape-divider-bottom-1611924391 svg {
-        width: calc(100% + 1.3px);
-        height: 292px;
+      width: 100%;
+      height: 100%;
+      background-color: red;
+      fill:#FCF9F4;
     }
     .overview{
       flex: 1;
       width: 100%;
       height: 100px;
       border: 2px solid green;
+
     }
     .skills-graph{
       flex: 1;
@@ -334,25 +343,83 @@ a{
         top:0;
         right: 0;
       }
-        .custom-shape-divider-bottom-1611924391 {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      overflow: hidden;
-      line-height: 0;
-      }
+      .paragraph svg{
+        width:600px;
+        height:500px;
 
-      .custom-shape-divider-bottom-1611924391 svg {
-      position: relative;
-      display: block;
-      width: calc(100% + 1.3px);
-      height: 50px;
-      transform: rotateY(180deg);
       }
-
-      .custom-shape-divider-bottom-1611924391 .shape-fill {
-      fill: var(--bgcolor);
+      .paragraph svg foreignObject{
+        color: var(--bgcolor);
+        line-height: 1.7;
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        fill:#FCF9F4;
+      }
+      .overview{
+        flex: 1;
+        background: url('../picoverview.svg') no-repeat;
+        background-position: center;
+        background-size:contain;
+        width: 100%;
+        height: 100%;
+        padding-left: 20%;
+      }
+      .overview4{
+        border: 2px solid black;
+        width:580px;
+        height:500px;
+        display:grid;
+        grid-template-areas:
+          "education5 language4"
+          "certificates7 experience5";
+        grid-template-rows: 250px 250px;
+        grid-template-columns: 290px 290px;
+      }
+      h2{
+        color:var(--textColor);
+        font-size: 80px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+      .education5{
+        grid-area: education5;
+        border:2px solid green;
+        position: relative;
+      }
+      .education5 h2{
+        position: absolute;
+        left:100px;
+        top:20px;
+      }
+      .education5 p{
+         background-color:red;
+         position: absolute;
+         left:50%;
+         top:50%;
+         transform: translate(-50%.-50%);
+      }
+      .language4{
+        grid-area: language4;
+        position: relative;
+        border: 2px solid black;
+      }
+      .language4 h2{
+         position: absolute;
+         left:100px;
+         top:60px;
+      }
+      .language4 p{
+        position: absolute;
+         left:100px;
+         top:90px;
+      }
+      .certificates7{
+        grid-area: certificates7;
+        border: 2px solid gold;
+      }
+      .experience5{
+        grid-area: experience5;
+        border: 2px solid blue;
       }
       .content{
         padding: 30px 30px 60px;
