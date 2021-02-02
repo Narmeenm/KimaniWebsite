@@ -514,7 +514,29 @@ a{
       }
       .quote{
         border:2px solid white;
-        width:50%;
+        width:60%;
+        padding-top: 56px;
+      }
+      .quote h3{
+        color: var(--bgcolor);
+        text-align: center;
+        font-size: 30px;
+      }
+      .quote .fas{
+
+      }
+      .quote p{
+        text-align: center;
+        color: var(--bgcolor);
+        font-size: 105%;
+        line-height: 1.7;
+      }
+      .iconMedia{
+        border: 2px solid black;
+        margin-top: 300px;
+      }
+      .address-pg{
+        border: 2px solid gold;
       }
       #content-desktop{
         display: block;
