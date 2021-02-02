@@ -495,10 +495,18 @@ a{
       }
       table{
         border-spacing: 15px 30px;
+        border: 2px solid black;
       }
       td{
         color: var(--textColor);
-        font-size:160%;
+        font-size:161%;
+      }
+      td .fas{
+        color: var(--textColor);
+      }
+      .rightC{
+        border: 2px solid black;
+        width:365px;
       }
       #content-desktop{
         display: block;
