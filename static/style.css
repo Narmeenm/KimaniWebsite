@@ -322,15 +322,19 @@ a{
         height: 100%;
         width: 50%;
       }
-      /* the style of the about page */
-      .border{
-        background:var(--textColor);
-        width: 20%;
-        height: 100%;
+      .footerSide{
+        background:url('../footerside.svg') no-repeat;
+        background-size: cover;
+        background-position:center;
+        width: 367px;
+        height: 1024px;
         position: fixed;
         top:0;
         right: 0;
+        bottom: 0;
+        padding-left: 126px;
       }
+      /* the style of the about page */
       .paragraph{
         position: relative;
         border: 2px solid blue;
@@ -499,7 +503,7 @@ a{
       }
       td{
         color: var(--textColor);
-        font-size:161%;
+        font-size:160%;
       }
       td .fas{
         color: var(--textColor);
@@ -507,6 +511,10 @@ a{
       .rightC{
         border: 2px solid black;
         width:365px;
+      }
+      .quote{
+        border:2px solid white;
+        width:50%;
       }
       #content-desktop{
         display: block;
