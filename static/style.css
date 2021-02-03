@@ -328,6 +328,8 @@ a{
         background-position:center;
         width: 367px;
         height: 1024px;
+        font-size: 105%;
+        color: var(--bgcolor);
         position: fixed;
         top:0;
         right: 0;
@@ -514,11 +516,10 @@ a{
       }
       .quote{
         border:2px solid white;
-        width:60%;
+        width:68%;
         padding-top: 56px;
       }
       .quote h3{
-        color: var(--bgcolor);
         text-align: center;
         font-size: 30px;
       }
@@ -527,16 +528,27 @@ a{
       }
       .quote p{
         text-align: center;
-        color: var(--bgcolor);
-        font-size: 105%;
         line-height: 1.7;
       }
       .iconMedia{
         border: 2px solid black;
-        margin-top: 300px;
+        margin-top: 400px;
+
+      }
+      .iconMedia i{
+        font-size: 30px;
+        margin-right: 30px;
+
       }
       .address-pg{
         border: 2px solid gold;
+      }
+      .address-pg p i{
+        font-size: 30px;
+        margin-right: 25px;
+      }
+      .copyright-pg,.address-pg{
+        margin-top: 20px;
       }
       #content-desktop{
         display: block;
