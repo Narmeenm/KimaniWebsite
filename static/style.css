@@ -649,6 +649,8 @@ a{
     }
     .work-list .show-desc{
       text-align: right;
+      background:yellow;
+      height:50px;
 
     }
     .edu-list{
