@@ -503,11 +503,11 @@ a{
         border-spacing: 15px 30px;
         border: 2px solid black;
       }
-      td{
+      .skills-list td{
         color: var(--textColor);
         font-size:160%;
       }
-      td .fas{
+      .skills-list td .fas{
         color: var(--textColor);
       }
       .rightC{
@@ -633,19 +633,33 @@ a{
     .lang-list{
       padding-left:15%;
       padding-top:5%;
-      font-size:14px;
       border: 2px solid green;
       border-spacing: 10px 20px;
+      font-size:24px;
     }
+
     .lang-list .advanced{
       width:90%;
     }
     .work-list{
       padding-top:6%;
     }
+    .work-list td{
+      font-size:24px;
+    }
     .work-list .show-desc{
       text-align: right;
 
+    }
+    .edu-list{
+      padding-top:5%;
+      border-spacing: 10px 20px;
+    }
+    .edu-list td{
+      font-size:24px;
+    }
+    .edu-list .show-desc{
+      text-align: right;
     }
 
   }
