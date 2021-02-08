@@ -594,6 +594,7 @@ a{
      .cv-Certificates{
         grid-area:cv-Certificates;
         border:2px solid brown;
+        padding-top: 25%;
       }
      .cv-Languages{
        grid-area:cv-Languages;
@@ -601,11 +602,14 @@ a{
      }
      .cv-workExperince{
        grid-area:cv-workExperince;
-       border:2px solid pink;
+       padding-top: 5%;
+       padding-left: 5%;
+       border-left :5px solid var(--textColor);
      }
      .cv-Education{
        grid-area:cv-Education;
-       border:2px solid green;
+       padding-left: 5%;
+       border-left :5px solid var(--textColor);
      }
     h4{
       font-size: 35px;
