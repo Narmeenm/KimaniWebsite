@@ -334,7 +334,7 @@ a{
         top:0;
         right: 0;
         bottom: 0;
-        padding-left: 126px;
+        padding-left: 7%;
       }
       /* the style of the about page */
       .paragraph{
@@ -499,7 +499,7 @@ a{
         width: 100%;
         height:100%;
       }
-      table{
+      .skills-list{
         border-spacing: 15px 30px;
         border: 2px solid black;
       }
@@ -516,7 +516,7 @@ a{
       }
       .quote{
         border:2px solid white;
-        width:68%;
+        width:69%;
         padding-top: 56px;
       }
       .quote h3{
@@ -533,6 +533,7 @@ a{
       .iconMedia{
         border: 2px solid black;
         margin-top: 400px;
+        text-align: center;
 
       }
       .iconMedia i{
@@ -553,4 +554,88 @@ a{
       #content-desktop{
         display: block;
       }
+
+      /*the resume page design */
+
+      .resume-page{
+        margin-top:7.5%;
+        margin-left: 449px;
+        border: 2px solid black;
+        width:50%;
+        color:var(--textColor);
+      }
+      .title-resume{
+        font-size: 300%;
+        text-align: center;
+        border: 2px solid red;
+
+
+      }
+      .certifi,.langu{
+        height: 15%;
+        width:15%;
+        margin-right: 15px;
+      }
+      .resume-grid{
+        padding-top: 40px;
+        display:grid;
+        grid-template-columns:318px 600px;
+        grid-template-areas:
+          "cv-Certificates cv-workExperince"
+          "cv-Certificates cv-workExperince"
+          "cv-Certificates cv-workExperince"
+          "cv-Certificates cv-workExperince"
+          "cv-Certificates cv-Education"
+          "cv-Languages cv-Education"
+          "cv-Languages cv-Education";
+
+      }
+
+     .cv-Certificates{
+        grid-area:cv-Certificates;
+        border:2px solid brown;
+      }
+     .cv-Languages{
+       grid-area:cv-Languages;
+       border:2px solid orange;
+     }
+     .cv-workExperince{
+       grid-area:cv-workExperince;
+       border:2px solid pink;
+     }
+     .cv-Education{
+       grid-area:cv-Education;
+       border:2px solid green;
+     }
+    h4{
+      font-size: 35px;
+    }
+    .fa-briefcase ,.fa-graduation-cap{
+      margin-right: 15px;
+    }
+    .certifi-list{
+      padding-left:9%;
+      padding-top:9%;
+      padding-bottom: 10%;
+    }
+    .certifi-list ul{
+      list-style-type:disc;
+      font-size:24px;
+
+    }
+    .certifi-list ul li{
+      padding-bottom: 7%;
+    }
+    .lang-list{
+      padding-left:15%;
+      padding-top:5%;
+      font-size:14px;
+      border: 2px solid green;
+      border-spacing: 10px 20px;
+    }
+    .lang-list .advanced{
+      width:90%;
+    }
+
+
   }
