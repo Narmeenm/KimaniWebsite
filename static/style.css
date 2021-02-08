@@ -648,20 +648,25 @@ a{
       font-size:24px;
     }
     .work-list .show-desc{
-      text-align: right;
+      text-align:right;
       background:yellow;
-      height:50px;
+      height:65px;
+
 
     }
     .edu-list{
       padding-top:5%;
-      border-spacing: 10px 20px;
     }
     .edu-list td{
       font-size:24px;
     }
     .edu-list .show-desc{
       text-align: right;
+      background:yellow;
+      height:60px;
+    }
+    .DescrClick{
+       cursor: pointer;
     }
 
   }
