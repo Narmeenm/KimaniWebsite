@@ -633,7 +633,6 @@ a{
     .lang-list{
       padding-left:15%;
       padding-top:5%;
-      border: 2px solid green;
       border-spacing: 10px 20px;
       font-size:24px;
     }
@@ -649,24 +648,29 @@ a{
     }
     .work-list .show-desc{
       text-align:right;
-      background:yellow;
       height:65px;
 
 
     }
     .edu-list{
       padding-top:5%;
+      border-spacing: 10px;
     }
     .edu-list td{
       font-size:24px;
     }
     .edu-list .show-desc{
       text-align: right;
-      background:yellow;
-      height:60px;
+      height:65px;
     }
     .DescrClick{
        cursor: pointer;
+       color: var(--textColor);
+       background: transparent;
+       font-size:24px;
+       border:none;
+       box-shadow: 5px 5px 5px #D6AC89;
+
     }
 
   }
