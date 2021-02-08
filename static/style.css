@@ -594,7 +594,7 @@ a{
      .cv-Certificates{
         grid-area:cv-Certificates;
         border:2px solid brown;
-        padding-top: 25%;
+        padding-top: 55%;
       }
      .cv-Languages{
        grid-area:cv-Languages;
@@ -640,7 +640,9 @@ a{
     .lang-list .advanced{
       width:90%;
     }
-
+    .work-list{
+      padding-top:6%;
+    }
     .work-list .show-desc{
       text-align: right;
 
