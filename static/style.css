@@ -560,7 +560,6 @@ a{
       .resume-page{
         margin-top:7.5%;
         margin-left: 449px;
-        border: 2px solid black;
         width:50%;
         color:var(--textColor);
       }
@@ -593,12 +592,11 @@ a{
 
      .cv-Certificates{
         grid-area:cv-Certificates;
-        border:2px solid brown;
         padding-top: 55%;
       }
      .cv-Languages{
        grid-area:cv-Languages;
-       border:2px solid orange;
+       padding-top: 12%;
      }
      .cv-workExperince{
        grid-area:cv-workExperince;
