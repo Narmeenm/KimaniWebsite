@@ -597,6 +597,7 @@ a{
      .cv-Languages{
        grid-area:cv-Languages;
        padding-top: 12%;
+       padding-bottom:10%;
      }
      .cv-workExperince{
        grid-area:cv-workExperince;
@@ -629,10 +630,11 @@ a{
       padding-bottom: 7%;
     }
     .lang-list{
-      padding-left:15%;
+      padding-left:9%;
       padding-top:5%;
       border-spacing: 10px 20px;
       font-size:24px;
+      margin-right: 10px;
     }
 
     .lang-list .advanced{
@@ -647,9 +649,11 @@ a{
     .work-list .show-desc{
       text-align:right;
       height:65px;
-
-
     }
+    .work-list .years{
+      text-shadow: 1px 1px 1px;
+    }
+
     .edu-list{
       padding-top:5%;
       border-spacing: 10px;
@@ -668,7 +672,9 @@ a{
        font-size:24px;
        border:none;
        box-shadow: 5px 5px 5px #D6AC89;
-
+    }
+    .edu-list .years{
+      text-shadow: 1px 1px 1px;
     }
 
   }
