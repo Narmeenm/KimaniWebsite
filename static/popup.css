@@ -114,8 +114,7 @@
 }
 .DescrClick .popuptext {
   visibility: hidden;
-  background-color:transparent;
-  color: var(--textColor);
+  background: var(--textColor);
   width: 270%;
   border-radius: 6px;
   padding: 8px 8px;
@@ -144,4 +143,29 @@
   padding-bottom: 8%;
   border: 1px solid black;
   width:100%;
+}
+.jobDesc4{
+  color: var(--bgcolor);
+  font-size: 18px;
+  list-style-type:disc;
+  list-style-position:outside;
+  text-align:left;
+  padding-left: 9%;
+  padding-right: 9%;
+}
+
+.jobDesc4 li{
+  padding-bottom: 8%;
+  border: 1px solid black;
+  width:100%;
+}
+
+.popuptext .DescPopup4{
+  color: var(--bgcolor);
+  font-size: 18px;
+  padding-left:5%;
+  padding-right: 9%;
+  padding-top: 9%;
+  text-align: left;
+  border: 1px solid black;
 }
