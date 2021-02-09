@@ -5,6 +5,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta name="description" content="digital strategist website">
      <link rel="stylesheet" href="static/style.css" type=text/css>
+     <link rel="stylesheet" href="static/popup.css" type=text/css>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
      <link rel="preconnect" href="https://fonts.gstatic.com">
      <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
@@ -13,7 +14,7 @@
      <title>Kimani Livingstone</title>
   </head>
   <body>
-    <div class="logo"><img src="img/kimanilogo.png"></div>
+    <div class="logo"><a href="index.html"><img src="img/kimanilogo.png"></a></div>
     <div class="navside">
       <div>
       <ul class="nav-links">
@@ -46,17 +47,48 @@
                   </a>
                 </div>
                 <div class="language4">
-                  <button class="fourthLang">
-                    <h2>4</h2>
-                    <p>Language</p>
-                 </button>
+                    <button data-modal-target="#modal" class="fourthLang">
+                      <h2>4</h2>
+                      <p>Language</p>
+                   </button>
+                 <!--the popup div -->
+                     <div class="modal" id = "modal">
+                        <div class="modal-header">
+                          <div class="title">My Fourth Languages</div>
+                          <button data-close-button class="close-button">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                          <table class="lang-list">
+                            <tr>
+                              <td>Native</td>
+                              <td>English</td>
+                            </tr>
+                            <tr>
+                              <td>Advanced</td>
+                              <td>Spanish</td>
+                            </tr>
+                            <tr>
+                              <td>Limited</td>
+                              <td>Dutch</td>
+                            </tr>
+                            <tr>
+                              <td>Limited</td>
+                              <td>Russian</td>
+                            </tr>
+                          </table>
+                        </div>
+                        <div id="overlay"></div>
+                    </div>
                 </div>
+
                 <div class="certificates7">
-                  <button class="lsCertificate">
+                  <button onclick="myFunction()" class="lsCertificate">
                     <h2>7</h2>
                     <p>Certificates</p>
+                      <span class="popuptext" id="myPopup">A Simple Popup!</span>
                  </button>
                 </div>
+
                 <div class="experience5">
                   <a href="resume.html">
                     <h2>5</h2>
@@ -165,6 +197,14 @@
        </div>
      </div>
    </div>
+   <script>
+      // When the user clicks on div, open the popup
+      function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+   </script>
+   <script src="./static/popup.js"></script>
   </body>
   <script src="javascript.js"></script>
 </html>
