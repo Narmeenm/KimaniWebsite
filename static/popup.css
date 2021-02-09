@@ -1,34 +1,29 @@
 .modal{
-  position:fixed;
-  top:40%;
-  left:70%;
+  position:absolute;
+  top:50%;
+  left:140%;
   transform:translate(-50%, -50%) scale(0);
   transition:200ms ease-in-out;
-  border: 10px solid;
-  border-radius: 10px;
-  z-index:10;
-  background:var(--bgcolor);
-  width:auto;
-  max-width: 80%;
+  z-index:1;
+  background:transparent;
+  width:90%;
+  max-width: 100%;
   color:var(--textColor) ;
 }
 
 .modal.active{
   transform:translate(-50%, -50%) scale(1);
 }
-.modal-header{
-  padding: 10px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+.modal-body .lang-list{
+  margin: 0;
+  padding: 0;
+  font-size:22px;
+  border-spacing: 15px 6px;
 }
 
-.modal-header .title{
-  font-size: 1.25rem;
-  font-weight:bold;
-}
 
-.modal-header .close-button{
+ .close-button{
   cursor: pointer;
   border: none;
   background: none;
@@ -73,29 +68,26 @@
 /* The actual popup */
 .lsCertificate .popuptext {
   visibility: hidden;
-  width: 300px;
-  background-color:red;
-  color: #fff;
-  text-align: center;
+  width: 110%;
+  background-color:transparent;
+  color: var(--textColor);
   border-radius: 6px;
-  padding: 8px 0;
+  padding: 8px 8px;
   position: absolute;
   z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
+  top: 5%;
+  left: 30%;
+  margin-left: -300px;
 }
-
-/* Popup arrow */
-.lsCertificate .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
+.popuptext ul{
+  list-style-type:disc;
+  list-style-position:outside;
+  font-size:22px;
+  text-align:left;
+  padding-left: 10%;
+}
+.popuptext ul li{
+  padding-bottom: 5%;
 }
 
 /* Toggle this class - hide and show the popup */
