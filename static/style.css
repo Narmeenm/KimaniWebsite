@@ -174,7 +174,6 @@ a{
     }
     .paragraph{
       width: 100%;
-      border: 2px solid bold;
       position: relative;
     }
 
@@ -190,14 +189,11 @@ a{
       flex: 1;
       width: 100%;
       height: 100px;
-      border: 2px solid green;
-
     }
     .skills{
       flex: 1;
       width: 800px;
       height:450px;
-      border: 2px solid red;
     }
     #content-desktop{
       display: none;
@@ -388,7 +384,6 @@ a{
         background: url('../picoverview.svg') no-repeat;
         background-size:contain;
         margin-bottom: 10%;
-        border: 2px solid black;
         width:600px;
         height:600px;
         display:grid;
@@ -405,18 +400,17 @@ a{
       }
       .education5{
         grid-area: education5;
-        border:2px solid green;
         position: relative;
       }
       .education5 h2{
         position: absolute;
         left:95px;
-        top:100px;
+        top:130px;
       }
       .education5 p{
          position: absolute;
          left:34%;
-         top:120px;
+         top:150px;
          transform: translate(-50%.-50%);
          color: var(--textColor);
          text-align: center;
@@ -425,13 +419,12 @@ a{
       .language4{
         grid-area: language4;
         position: relative;
-        border: 2px solid black;
       }
 
       .language4 .fourthLang{
         width: 70%;
         height:50%;
-        border: 1px solid black;
+        border: none;
         cursor: pointer;
         background:transparent;
         position: absolute;
@@ -453,13 +446,12 @@ a{
       }
       .certificates7{
         grid-area: certificates7;
-        border: 2px solid gold;
         position: relative;
       }
       .certificates7 .lsCertificate{
         width: 65%;
         height:50%;
-        border: 1px solid black;
+        border: none;
         cursor: pointer;
         background:transparent;
         position: absolute;
@@ -478,7 +470,6 @@ a{
       }
       .experience5{
         grid-area: experience5;
-        border: 2px solid blue;
         position:relative;
       }
       .experience5 h2{
