@@ -169,3 +169,13 @@
   text-align: left;
   border: 1px solid black;
 }
+.popuptext .EduPopup{
+  color: var(--bgcolor);
+  font-size: 18px;
+  padding-left:5%;
+  padding-right: 9%;
+  padding-top: 9%;
+  padding-bottom: 9%;
+  text-align: left;
+  border: 1px solid black;
+}
