@@ -75,14 +75,16 @@
   left: 30%;
   margin-left: -300px;
 }
-.popuptext ul{
+
+
+.popuptext .overCertifi{
   list-style-type:disc;
   list-style-position:outside;
   font-size:22px;
   text-align:left;
   padding-left: 10%;
 }
-.popuptext ul li{
+.popuptext .overCertifi li{
   padding-bottom: 5%;
 }
 
@@ -102,4 +104,44 @@
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
+}
+
+
+.DescrClick {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.DescrClick .popuptext {
+  visibility: hidden;
+  background-color:transparent;
+  color: var(--textColor);
+  width: 270%;
+  border-radius: 6px;
+  padding: 8px 8px;
+  position: absolute;
+  z-index: 1;
+  top: -20px;
+  left: 27%;
+  margin-left: -300px;
+}
+.DescrClick .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+.jobDesc1{
+  background: var(--textColor);
+  color: var(--bgcolor);
+  font-size: 18px;
+  list-style-type:disc;
+  list-style-position:outside;
+  text-align:left;
+  padding:10% 10%;
+
+}
+.jobDesc1 li{
+  padding-bottom: 8%;
+  border: 1px solid black;
+  width:100%;
 }

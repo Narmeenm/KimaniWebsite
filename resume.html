@@ -5,6 +5,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta name="description" content="digital strategist website">
      <link rel="stylesheet" href="static/style.css" type=text/css>
+     <link rel="stylesheet" href="static/popup.css" type=text/css>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
      <link rel="preconnect" href="https://fonts.gstatic.com">
      <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
@@ -70,17 +71,65 @@
              <td class="years">2017-06 - Current</td>
              <td>Special project officer, Bank of Jamaica</td>
            </tr>
-           <tr class="show-desc"><td></td><td><button class="DescrClick">Show Description</button></td></tr>
+           <tr class="show-desc">
+             <td>
+               </td><td>
+                 <button onclick="myFunction()" class="DescrClick">Show Description
+                 <span class="popuptext" id="myPopup">
+                    <ul class="jobDesc1">
+                       <li>Performed various roles within the Financial Institutions Supervisory Division, while gaining numerous skills and training required for providing effective regulatory oversight.</li>
+                       <li>Assisted in achieving the Division's mandate of ensuring safety & soundness of the Jamaican financial system by conducting Fit & Proper assessments on required relevant persons in the banking industry.</li>
+                       <li>Supported department heads by streamlining newly formed processes, forms and questionnaires which ultimately contributed to building out a newly formed department.</li>
+                       <li>Translated key functional specifications to business requirements for a new internal data collection tool, this platform drastically improves data collection efficiency.</li>
+                       <li>Identified innovative and automated approaches to routine tasks, making suggestions that were well received.</li>
+                       <li>Promptly fulfill requests for information from internal stakeholders in an effective manner.</li>
+                       <li>Familiar with tools like Pivot Tables, Graphs, and Tableau software, used to create relevant management reports.</li>
+                   </ul>
+                 </span>
+               </button>
+             </td>
+           </tr>
            <tr>
              <td class="years">2019-10 - 2020-06</td>
              <td>Digital Transformation Consultant  , MDB Laboratori D'analisis Cliniques, Bellido</td>
            </tr>
-           <tr class="show-desc"><td></td><td><button class="DescrClick">Show Description</button></td></tr>
+
+           <tr class="show-desc">
+             <td>
+              </td>
+              <td>
+                 <button onclick="second()" class="DescrClick">Show Description
+                 <span class="popuptext" id="myPopup2">
+                   <ul class="jobDesc1">
+                      <li>Our team developed a balanced Digital Transformation Plan that entailed a 360 outlook on improving this SME family-owned business.</li>
+                      <li>Our strategic plan aimed at improving MDB Lab’s level of scalability while operating through the COVID-19 pandemic.</li>
+                      <li>Actively listened to customers' needs, confirming full understanding before addressing concerns.</li>
+                      <li>Analyze specific risks which are inherent to MDB Lab's operations.</li>
+                      <li>Conduct financial statement analysis to determine the financial health of the company.</li>
+                      <li>Reviewed the business process, procedures and value proposition to gain a complete understanding of the business.</li>
+                  </ul>
+                 </span>
+               </button>
+             </td>
+           </tr>
+
            <tr>
              <td class="years">2020-03 - 2020-05</td>
              <td>Intern,  Perez y Cia</td>
            </tr>
-           <tr class="show-desc"><td></td><td><button class="DescrClick">Show Description</button></td></tr>
+           <tr class="show-desc">
+             <td></td>
+             <td>
+               <button onclick="third()" class="DescrClick">Show Description
+               <span class="popuptext" id="myPopup3">
+                 <ul class="jobDesc1">
+                    <li>Worked closely with operations team, receiving hands on training concerning the logistics industry while assiting to align and coordinate all resources required to facilitate our clients’ needs.</li>
+                </ul>
+               </span>
+             </button>
+             </td>
+           </tr>
+
            <tr>
              <td class="years">2016-07 - 2017-07</td>
              <td>Reasearch Assistant, PetroCaribe Development Fund</td>
@@ -129,6 +178,7 @@
        </div>
      </div>
    </div>
+
   </body>
   <script src="javascript.js"></script>
 </html>
