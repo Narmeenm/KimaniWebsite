@@ -60,7 +60,7 @@ a{
 
     .navside{
        background: url('../img/navsideS.png') no-repeat;
-       background-size:100%;
+       background-size:auto;
        width: 45%;
        height: 700px;
        position:fixed;
