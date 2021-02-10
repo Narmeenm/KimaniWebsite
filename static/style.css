@@ -531,6 +531,7 @@ a{
       .iconMedia i{
         font-size: 30px;
         margin-right: 30px;
+        color: var(--bgcolor);
 
       }
       .address-pg{

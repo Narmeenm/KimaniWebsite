@@ -11,6 +11,7 @@
      <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js" integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw==" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.js" integrity="sha512-tjW2dLIvxBrQWtbL7npJzlMVxznKMrkEJtRX5ztkEP6RC5oJdVkmAfFNHTSNrqv7++hAza+dvV4Bijf8rHeC0Q==" crossorigin="anonymous"></script>
      <title>Kimani Livingstone</title>
   </head>
   <body>
@@ -192,8 +193,10 @@
             <br>Tony Robbins</p>
        </div>
        <div class="iconMedia">
-          <i class="fab fa-linkedin-in"></i>
-          <i class="far fa-envelope"></i>
+          <a target="_blank" href="https://www.linkedin.com/in/kimani-omari-livingstone/"><i class="fab fa-linkedin-in"></i></a>
+          <span id="email-tooltip" class="note" data-toggle="tooltip" title="click to copy my email address to your clipboard 😀">
+           <a id="email" data-clipboard-text ="Narmeenmassalha4975@gmail.com"><i class="far fa-envelope"></i></a>
+          </span>
 
        </div>
        <div class="address-pg">
@@ -212,7 +215,15 @@
         popup.classList.toggle("show");
       }
    </script>
+   <script>
+     //copy the email address
+    (document).ready(function(){
+      ('[data-toggle="tooltip"]').tooltip();
+    });
+    let clipboard = new ClipboardJS('#email');
+   </script>
    <script src="./static/popup.js"></script>
   </body>
   <script src="javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
 </html>
