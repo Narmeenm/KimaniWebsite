@@ -340,16 +340,44 @@ h2{
       flex-direction: row;
     }
     .fourthLang p{
-      margin-top: 2.9ch;
+      margin-top: 2.5ch;
       margin-left: 0.5ch;
     }
     .certificates7{
       grid-area: certificates7;
       position: relative;
     }
+    .certificates7 .lsCertificate{
+      border: 1px solid black;
+      cursor: pointer;
+      background:transparent;
+      padding-top: 3.2ch;
+      position: absolute;
+      left:5ch;
+      top:3ch;
+      display: flex;
+      flex-direction:row;
+    }
+    .certificates7 p{
+      padding-top: 2.5ch;
+      border: 1px solid brown;
+    }
     .experience5{
       grid-area: experience5;
       position:relative;
+      border: 1px solid gray;
+    }
+    .experience5 a{
+      display: flex;
+      flex-direction: row;
+      padding-top: 3ch;
+      padding-left: 2ch;
+    }
+    .experience5 p{
+      background: yellow;
+      width: 55%;
+      text-align: center;
+      padding-left: 1ch;
     }
 
     .skills{
