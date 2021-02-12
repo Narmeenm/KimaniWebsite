@@ -1,5 +1,5 @@
-function myFunction() {
-var popup = document.getElementById("myPopup");
+function first() {
+var popup = document.getElementById("myPopup1");
 popup.classList.toggle("show");
 }
 
@@ -29,7 +29,7 @@ popup.classList.toggle("show");
 }
 
 
-//Hamburger menu in the small navbar
+//Hamburger menu in the small navbar ; for the responsive style of the iphone 6
 
 function myFunction() {
   var x = document.getElementById("myLinks");
