@@ -256,6 +256,11 @@ h2{
       flex-direction:column;
       height: 100%;
     }
+    .about-container h1{
+      margin-bottom: 10px;
+      background: red;
+    }
+
     .paragraph{
       flex:1;
       width: 100%;
@@ -284,6 +289,8 @@ h2{
       height: 200%;
     }
     .overview4{
+      background: url('../picoverview.svg') no-repeat;
+      background-size: contain;
       display: grid;
       grid-template-areas:
         "education5 language4"
@@ -293,7 +300,9 @@ h2{
     }
     .overview4 p{
       color: var(--textColor);
+      font-size: 1.1em;
     }
+
     h2{
       font-size:3em;
     }
@@ -302,9 +311,37 @@ h2{
       border: 2px solid gold;
       position: relative;
     }
+    .education5 h2{
+      position: absolute;
+      left:1.3ch;
+      top:2.3ch;
+    }
+    .education5 p{
+       position: absolute;
+       left:6.5ch;
+       top:9ch;
+       border: 1px solid black;
+     }
+
+
     .language4{
       grid-area: language4;
       position: relative;
+      border:2px solid red;
+    }
+    .language4 .fourthLang{
+      border: 1px solid green;
+      cursor: pointer;
+      background:transparent;
+      position: absolute;
+      left:1.3ch;
+      top:5ch;
+      display: flex;
+      flex-direction: row;
+    }
+    .fourthLang p{
+      margin-top: 2.9ch;
+      margin-left: 0.5ch;
     }
     .certificates7{
       grid-area: certificates7;
