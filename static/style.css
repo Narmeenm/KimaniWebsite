@@ -166,16 +166,35 @@ a{
       /* Style the navigation menu */
       .topnav {
       overflow: visible;
-      border: 1px solid black;
+      background:url('../navSmall.svg') no-repeat;
+      background-position: right;
       height: 6em;
-      background-color: transparent;
       position: relative;
       }
+       .logoPic a{
 
-      .logo img{
-        border: 2px solid orange;
+         width: 60%;
+         height:100px;
+       }
+
+      .logoPic img{
         position: absolute;
-        width: 70%;
+        width: 60%;
+        height: 100px;
+        left: 0px;
+        top: -10px;
+        z-index: -1;
+       }
+
+       .picLogo:hover{
+        background: transparent;
+
+       }
+
+       /*this is the logo in the landing page */
+      .logo img{
+        position: fixed;
+        width: 50%;
         height: 117px;
         left: 0px;
         top: -10px;
@@ -185,23 +204,26 @@ a{
       /* Hide the links inside the navigation menu (except for logo/home) */
       .topnav #myLinks {
       display: none;
-      background-color:var(--textColor);
-      border: 1px solid green;
-      height: 100%;
+      background:var(--textColor);
+      height: auto;
+      position: absolute;
+      right: 0;
+      z-index: 2;
       }
 
       /* Style navigation menu links */
       .topnav a {
-      color: black;
+      color: var(--bgcolor);
       padding: 14px 16px;
       text-decoration: none;
+      text-transform: uppercase;
       font-size: 17px;
       display: block;
       }
 
       /* Style the hamburger menu */
       .topnav a.icon {
-      color: black;
+      color: var(--bgcolor);
       font-size: 3em;
       display: block;
       position: absolute;
@@ -210,9 +232,10 @@ a{
       }
 
       /* Add a grey background color on mouse-over */
-      .topnav a:hover {
-      background-color: #ddd;
-      color: black;
+      .links a:hover {
+      opacity: 0.3;
+      background-color: #fffdd0;
+      color:black;
       }
 
 
