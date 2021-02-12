@@ -22,8 +22,7 @@ body{
   margin: 0px;
   font-family: var(--fontText);
   background:var(--bgcolor);
-  font-family:var(--fontText);
-  overflow:scroll;
+  overflow-y:scroll;
   overflow-x:hidden!important;
 
 }
@@ -49,20 +48,15 @@ a{
 
 
     }
-    .logo img{
-      position: fixed;
-      width: 202px;
-      height: 117px;
-      left: 0px;
-      top: 0px;
-      z-index: -1;
-    }
+
+
 
     .navside{
        background: url('../img/navsideS.png') no-repeat;
        background-size:auto;
+       background-position: 0 0;
        width: 45%;
-       height: 700px;
+       max-height: 100%;
        position:fixed;
        left:0;
        top:34px;
@@ -74,13 +68,13 @@ a{
       height: 288px;
       position: absolute;
       top:30%;
-      left:4%;
+      left:3%;
     }
     .nav-links li{
       font-family: var(--fontText);
       font-style: normal;
       font-weight: normal;
-      font-size: 100%;
+      font-size: 90%;
       line-height: 3;
       text-align: center;
       text-transform: uppercase;
@@ -91,6 +85,8 @@ a{
     .side2{
 
     }
+
+
     .side2 .title{
       height: 22%;
       width: 60%;
@@ -165,8 +161,64 @@ a{
       width:100%;
     }
     /* the iphone style for the about page */
+
+      /*the navbar with Hamburger menu */
+      /* Style the navigation menu */
+      .topnav {
+      overflow: visible;
+      border: 1px solid black;
+      height: 6em;
+      background-color: transparent;
+      position: relative;
+      }
+
+      .logo img{
+        border: 2px solid orange;
+        position: absolute;
+        width: 70%;
+        height: 117px;
+        left: 0px;
+        top: -10px;
+        z-index: -1;
+      }
+
+      /* Hide the links inside the navigation menu (except for logo/home) */
+      .topnav #myLinks {
+      display: none;
+      background-color:var(--textColor);
+      border: 1px solid green;
+      height: 100%;
+      }
+
+      /* Style navigation menu links */
+      .topnav a {
+      color: black;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+      }
+
+      /* Style the hamburger menu */
+      .topnav a.icon {
+      color: black;
+      font-size: 3em;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      }
+
+      /* Add a grey background color on mouse-over */
+      .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+      }
+
+
+
     .about-container{
-      margin-top: 5%;
+      margin-top: 25%;
       margin-left: 187px;
       border: 2px solid var(--textColor);
       display: flex;
@@ -198,6 +250,9 @@ a{
     }
     #content-desktop{
       display: none;
+    }
+    #content-mobile{
+      display: block;
     }
 }
 
@@ -237,7 +292,16 @@ a{
         top:40%;
         left:10%;
       }
-
+       .nav-links li{
+         font-size: 100%;
+         font-family: var(--fontText);
+         text-transform: uppercase;
+         text-align: center;
+         line-height: 3;
+       }
+       .nav-links li a{
+         color: var(--bgcolor);
+       }
       .side2 .title{
         background:url('../img/Btitle.png') no-repeat;
         position: absolute;
@@ -546,6 +610,9 @@ a{
       }
       #content-desktop{
         display: block;
+      }
+      #content-mobile{
+        display: none;
       }
 
       /*the resume page design */

@@ -27,3 +27,15 @@ function Desc6() {
 var popup = document.getElementById("myPopup6");
 popup.classList.toggle("show");
 }
+
+
+//Hamburger menu in the small navbar
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
