@@ -1,181 +1,281 @@
-.modal{
-  position:absolute;
-  top:50%;
-  left:140%;
-  transform:translate(-50%, -50%) scale(0);
-  transition:200ms ease-in-out;
-  z-index:1;
-  background:transparent;
-  width:90%;
-  max-width: 100%;
-  color:var(--textColor) ;
-}
+@media only screen and (max-width: 414px) {
+  .modal{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%) scale(0);
+    transition:200ms ease-in-out;
+    z-index:1;
+    background:var(--bgcolor);
+    width:90%;
+    max-width: 100%;
+    color:var(--textColor) ;
+  }
 
-.modal.active{
-  transform:translate(-50%, -50%) scale(1);
-}
+  .modal.active{
+    transform:translate(-50%, -50%) scale(1);
+  }
 
-.modal-body .lang-list{
-  margin: 0;
-  padding: 0;
-  font-size:22px;
-  border-spacing: 15px 6px;
-}
-
-
- .close-button{
-  cursor: pointer;
-  border: none;
-  background: none;
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--textColor);
-}
-
-.modal-body{
-
-}
-
-#overlay{
-  position:fixed;
-  opacity:0;
-  transition:200ms ease-in-out;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  background-color:transparent;
-  pointer-events: none;
-}
-
-#overlay.active{
-  pointer-events:all;
-  opacity: 1;
-}
-
-/* Certificate popup on the about page */
-
-.lsCertificate {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-/* The actual popup */
-.lsCertificate .popuptext {
-  visibility: hidden;
-  width: 110%;
-  background-color:transparent;
-  color: var(--textColor);
-  border-radius: 6px;
-  padding: 8px 8px;
-  position: absolute;
-  z-index: 1;
-  top: 5%;
-  left: 30%;
-  margin-left: -300px;
-}
+  .modal-body .lang-list{
+    margin: 0;
+    padding: 0;
+    font-size:1em;
+    border-spacing: 1ch 1ch;
+  }
 
 
-.popuptext .overCertifi{
-  list-style-type:disc;
-  list-style-position:outside;
-  font-size:22px;
-  text-align:left;
-  padding-left: 10%;
-}
-.popuptext .overCertifi li{
-  padding-bottom: 5%;
-}
-
-/* Toggle this class - hide and show the popup */
-.lsCertificate .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
+   .close-button{
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--textColor);
+  }
 
 
-.DescrClick {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-.DescrClick .popuptext {
-  visibility: hidden;
-  background: var(--textColor);
-  width: 270%;
-  border-radius: 6px;
-  padding: 8px 8px;
-  position: absolute;
-  z-index: 1;
-  top: -20px;
-  left: 27%;
-  margin-left: -300px;
-}
-.DescrClick .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-.jobDesc1{
-  background: var(--textColor);
-  color: var(--bgcolor);
-  font-size: 18px;
-  list-style-type:disc;
-  list-style-position:outside;
-  text-align:left;
-  padding:10% 10%;
+  #overlay{
+    position:fixed;
+    opacity:0;
+    transition:200ms ease-in-out;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:transparent;
+    pointer-events: none;
+  }
 
-}
-.jobDesc1 li{
-  padding-bottom: 8%;
-  border: 1px solid black;
-  width:100%;
-}
-.jobDesc4{
-  color: var(--bgcolor);
-  font-size: 18px;
-  list-style-type:disc;
-  list-style-position:outside;
-  text-align:left;
-  padding-left: 9%;
-  padding-right: 9%;
-}
+  #overlay.active{
+    pointer-events:all;
+    opacity: 1;
+  }
+  .lsCertificate {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
 
-.jobDesc4 li{
-  padding-bottom: 8%;
-  border: 1px solid black;
-  width:100%;
-}
+  /* The actual popup */
+  .lsCertificate .popuptext {
+    visibility: hidden;
+    width: 150%;
+    background-color:var(--bgcolor);
+    color: var(--textColor);
+    border-radius: 6px;
+  
+    padding: 1ch 1ch;
+    position: absolute;
+    z-index: 1;
+    top: 10ch;
+    left:0.1ch;
 
-.popuptext .DescPopup4{
-  color: var(--bgcolor);
-  font-size: 18px;
-  padding-left:5%;
-  padding-right: 9%;
-  padding-top: 9%;
-  text-align: left;
-  border: 1px solid black;
+  }
+
+
+  .popuptext .overCertifi{
+    list-style-type:disc;
+    list-style-position:outside;
+    font-size:1em;
+    text-align:left;
+    padding-left: 10%;
+  }
+  .popuptext .overCertifi li{
+    padding-bottom: 5%;
+  }
+  .lsCertificate .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
 }
-.popuptext .EduPopup{
-  color: var(--bgcolor);
-  font-size: 18px;
-  padding-left:5%;
-  padding-right: 9%;
-  padding-top: 9%;
-  padding-bottom: 9%;
-  text-align: left;
-  border: 1px solid black;
+@media only screen and (min-width: 1000px) {
+    .modal{
+      position:absolute;
+      top:50%;
+      left:140%;
+      transform:translate(-50%, -50%) scale(0);
+      transition:200ms ease-in-out;
+      z-index:1;
+      background:transparent;
+      width:90%;
+      max-width: 100%;
+      color:var(--textColor) ;
+    }
+
+    .modal.active{
+      transform:translate(-50%, -50%) scale(1);
+    }
+
+    .modal-body .lang-list{
+      margin: 0;
+      padding: 0;
+      font-size:22px;
+      border-spacing: 15px 6px;
+    }
+
+
+     .close-button{
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--textColor);
+    }
+
+    #overlay{
+      position:fixed;
+      opacity:0;
+      transition:200ms ease-in-out;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      background-color:transparent;
+      pointer-events: none;
+    }
+
+    #overlay.active{
+      pointer-events:all;
+      opacity: 1;
+    }
+
+    /* Certificate popup on the about page */
+
+    .lsCertificate {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    /* The actual popup */
+    .lsCertificate .popuptext {
+      visibility: hidden;
+      width: 110%;
+      background-color:transparent;
+      color: var(--textColor);
+      border-radius: 6px;
+      padding: 8px 8px;
+      position: absolute;
+      z-index: 1;
+      top: 5%;
+      left: 30%;
+      margin-left: -300px;
+    }
+
+
+    .popuptext .overCertifi{
+      list-style-type:disc;
+      list-style-position:outside;
+      font-size:22px;
+      text-align:left;
+      padding-left: 10%;
+    }
+    .popuptext .overCertifi li{
+      padding-bottom: 5%;
+    }
+
+    /* Toggle this class - hide and show the popup */
+    .lsCertificate .show {
+      visibility: visible;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s;
+    }
+
+    /* Add animation (fade in the popup) */
+    @-webkit-keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity:1 ;}
+    }
+
+
+    .DescrClick {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .DescrClick .popuptext {
+      visibility: hidden;
+      background: var(--textColor);
+      width: 270%;
+      border-radius: 6px;
+      padding: 8px 8px;
+      position: absolute;
+      z-index: 1;
+      top: -20px;
+      left: 27%;
+      margin-left: -300px;
+    }
+    .DescrClick .show {
+      visibility: visible;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s;
+    }
+    .jobDesc1{
+      background: var(--textColor);
+      color: var(--bgcolor);
+      font-size: 18px;
+      list-style-type:disc;
+      list-style-position:outside;
+      text-align:left;
+      padding:10% 10%;
+
+    }
+    .jobDesc1 li{
+      padding-bottom: 8%;
+      border: 1px solid black;
+      width:100%;
+    }
+    .jobDesc4{
+      color: var(--bgcolor);
+      font-size: 18px;
+      list-style-type:disc;
+      list-style-position:outside;
+      text-align:left;
+      padding-left: 9%;
+      padding-right: 9%;
+    }
+
+    .jobDesc4 li{
+      padding-bottom: 8%;
+      border: 1px solid black;
+      width:100%;
+    }
+
+    .popuptext .DescPopup4{
+      color: var(--bgcolor);
+      font-size: 18px;
+      padding-left:5%;
+      padding-right: 9%;
+      padding-top: 9%;
+      text-align: left;
+      border: 1px solid black;
+    }
+    .popuptext .EduPopup{
+      color: var(--bgcolor);
+      font-size: 18px;
+      padding-left:5%;
+      padding-right: 9%;
+      padding-top: 9%;
+      padding-bottom: 9%;
+      text-align: left;
+      border: 1px solid black;
+    }
 }

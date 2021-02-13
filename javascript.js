@@ -1,3 +1,9 @@
+// When the user clicks on div, open the popup
+function myCertifiPopup() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
 function first() {
 var popup = document.getElementById("myPopup1");
 popup.classList.toggle("show");

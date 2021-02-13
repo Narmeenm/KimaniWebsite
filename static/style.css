@@ -362,7 +362,6 @@ h2{
     .experience5{
       grid-area: experience5;
       position:relative;
-      border: 1px solid gray;
     }
     .experience5 a{
       display: flex;
@@ -372,7 +371,6 @@ h2{
     }
     .experience5 h2{
       margin-bottom: 1.5ch;
-      border:2px solid blue;
       height: 3ch;
       padding-top:1ch;
     }
@@ -394,17 +392,15 @@ h2{
       color: var(--textColor);
     }
     .rightC{
-      border:2px solid black;
       font-size: 1.2em;
     }
 
    /* the mobile footer */
    .footerSmall{
      background: url('../footerSmall.svg') no-repeat;
-     background-size:contain;
+     background-size:cover;
    }
    .footerSide{
-     border:2px solid green;
      padding-top: 4.5em;
      color: var(--bgcolor);
      display: flex;
@@ -415,12 +411,10 @@ h2{
      text-align: center;
    }
    .quote p{
-     border: 2px solid green;
      padding-right: 5%;
      padding-left: 5%;
    }
    .iconMedia{
-     border: 2px solid orange;
      text-align: center;
    }
    .iconMedia i{
@@ -430,7 +424,6 @@ h2{
    }
 
    .address-pg{
-     border: 2px solid gold;
      text-align: center;
    }
    .address-pg p .fa-map-marker-alt{
@@ -439,7 +432,10 @@ h2{
    .address-pg p i{
      font-size: 1.7em;
      margin-right: 1ch;
-     border: 1px solid red;
+   }
+   .copyright-pg{
+     padding-bottom: 3%;
+     padding-left: 5%;
    }
     #content-desktop{
       display: none;
