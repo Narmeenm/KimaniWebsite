@@ -11,21 +11,45 @@
      <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js" integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw==" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.js" integrity="sha512-tjW2dLIvxBrQWtbL7npJzlMVxznKMrkEJtRX5ztkEP6RC5oJdVkmAfFNHTSNrqv7++hAza+dvV4Bijf8rHeC0Q==" crossorigin="anonymous"></script>
      <title>Kimani Livingstone</title>
   </head>
   <body>
-    <div class="navside">
-      <div class="logo"><a href="index.html"><img src="img/kimanilogo.png"></a></div>
-      <div>
-      <ul class="nav-links">
-         <li><a href="about.html">about</a></li>
-         <li><a href="project.html">projects</a></li>
-         <li><a href="resume.html">resume</a></li>
-         <li><a href="blog.html">blog</a></li>
-         <li><a href="contact.html">contact me</a></li>
-      </ul>
-      </div>
+    <div id="content-mobile">
+        <div class="topnav">
+         <div class="logoPic"><a class="picLogo" href="index.html"><img src="img/kimanilogo2.png"></a></div>
+          <!-- Navigation links (hidden by default) -->
+          <div class="links" id="myLinks">
+            <a href="about.html">about</a>
+            <a href="project.html">projects</a>
+            <a href="resume.html">resume</a>
+            <a href="blog.html">blog</a>
+            <a href="contact.html">contact</a>
+          </div>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+
     </div>
+
+    <div id="content-desktop">
+        <div class="navside">
+          <div class="logo"><a href="index.html"><img src="img/kimanilogo.png"></a></div>
+          <div>
+          <ul class="nav-links">
+             <li><a href="about.html">about</a></li>
+             <li><a href="project.html">projects</a></li>
+             <li><a href="resume.html">resume</a></li>
+             <li><a href="blog.html">blog</a></li>
+             <li><a href="contact.html">contact</a></li>
+          </ul>
+          </div>
+        </div>
+    </div>
+
+
   <section class="resume-page">
     <div class="title-resume">Digital Transformation Strategist</div>
     <div class="resume-grid">
@@ -205,6 +229,39 @@
        </div>
     </div>
   </section>
+
+<!-- mobiile content -->
+  <div id="content-mobile">
+    <footer class="footerSmall">
+      <div class="footerSide">
+        <div class="quote">
+
+           <h3><i class="fas fa-quote-left"></i>    quote</h3>
+           <br>
+           <p>There is a powerful driving force inside every human being that,
+             once unleashed, can make any vision, dream, or desire a reality.<br>
+             <br>Tony Robbins</p>
+        </div>
+        <div class="iconMedia">
+           <a target="_blank" href="https://www.linkedin.com/in/kimani-omari-livingstone/"><i class="fab fa-linkedin-in"></i></a>
+           <span id="email-tooltip" class="note" data-toggle="tooltip" title="click to copy my email address to your clipboard 😀">
+            <a id="email" data-clipboard-text ="Narmeenmassalha4975@gmail.com"><i class="far fa-envelope"></i></a>
+           </span>
+
+        </div>
+        <div class="address-pg">
+              <p><i class="fas fa-map-marker-alt"></i>Jamica,Kingston</p><br>
+           <p><i class="fas fa-mobile-alt"></i>+1 876 372 2385</p>
+        </div>
+        <div class="copyright-pg">
+          <p>&copy;2021 Kimani Livingstone</p></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+<!-- mobiile content -->
+
+
    <div id="content-desktop">
      <div class="footerSide">
        <div class="quote">

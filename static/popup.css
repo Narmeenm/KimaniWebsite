@@ -63,7 +63,7 @@
     background-color:var(--bgcolor);
     color: var(--textColor);
     border-radius: 6px;
-  
+
     padding: 1ch 1ch;
     position: absolute;
     z-index: 1;
@@ -98,6 +98,79 @@
   @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity:1 ;}
+  }
+
+  .DescrClick {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .DescrClick .popuptext {
+    visibility: hidden;
+    background: var(--textColor);
+    width: 270%;
+    border-radius: 6px;
+    padding: 1ch 1ch;
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+    left: 27%;
+    margin-left: -300px;
+  }
+  .DescrClick .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  .jobDesc1{
+    background: var(--textColor);
+    color: var(--bgcolor);
+    font-size: 18px;
+    list-style-type:disc;
+    list-style-position:outside;
+    text-align:left;
+    padding:10% 10%;
+
+  }
+  .jobDesc1 li{
+    padding-bottom: 8%;
+    border: 1px solid black;
+    width:100%;
+  }
+  .jobDesc4{
+    color: var(--bgcolor);
+    font-size: 14px;
+    list-style-type:disc;
+    list-style-position:outside;
+    text-align:left;
+    padding-left: 9%;
+    padding-right: 9%;
+  }
+
+  .jobDesc4 li{
+    padding-bottom: 8%;
+    border: 1px solid black;
+    width:100%;
+  }
+
+  .popuptext .DescPopup4{
+    color: var(--bgcolor);
+    font-size: 18px;
+    padding-left:5%;
+    padding-right: 9%;
+    padding-top: 9%;
+    text-align: left;
+    border: 1px solid black;
+  }
+  .popuptext .EduPopup{
+    color: var(--bgcolor);
+    font-size: 14px;
+    padding-left:5%;
+    padding-right: 9%;
+    padding-top: 9%;
+    padding-bottom: 9%;
+    text-align: left;
+    border: 1px solid black;
   }
 }
 @media only screen and (min-width: 1000px) {

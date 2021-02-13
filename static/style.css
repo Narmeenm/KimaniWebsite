@@ -256,8 +256,8 @@ h2{
       height: 100%;
     }
     .about-container h1{
-      margin-bottom: 1.5ch;
-      margin-top: 1.5ch;
+      margin-bottom: 2ch;
+      margin-top: 2ch;
     }
 
     .paragraph{
@@ -305,7 +305,6 @@ h2{
     }
     .education5{
       grid-area: education5;
-      border: 2px solid gold;
       position: relative;
     }
     .education5 h2{
@@ -324,10 +323,9 @@ h2{
     .language4{
       grid-area: language4;
       position: relative;
-      border:2px solid red;
     }
     .language4 .fourthLang{
-      border: 1px solid green;
+      border: 1px solid green;/* do this border none */
       cursor: pointer;
       background:transparent;
       position: absolute;
@@ -375,7 +373,7 @@ h2{
       padding-top:1ch;
     }
     .experience5 p{
-      background: yellow;
+      border: 2px solid black;
       width: 55%;
       padding-top: 3ch;
     }
