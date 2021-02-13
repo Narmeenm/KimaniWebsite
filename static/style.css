@@ -258,7 +258,8 @@ h2{
     }
     .about-container h1{
       margin-bottom: 10px;
-      background: red;
+      margin-top: 10px;
+
     }
 
     .paragraph{
@@ -335,7 +336,7 @@ h2{
       background:transparent;
       position: absolute;
       left:1.3ch;
-      top:5ch;
+      bottom:7ch;
       display: flex;
       flex-direction: row;
     }
@@ -370,14 +371,18 @@ h2{
     .experience5 a{
       display: flex;
       flex-direction: row;
-      padding-top: 3ch;
-      padding-left: 2ch;
+      padding-left: 1.8ch;
+    }
+    .experience5 h2{
+      margin-bottom: 1.5ch;
+      border:2px solid blue;
+      height: 3ch;
+      padding-top:1ch;
     }
     .experience5 p{
       background: yellow;
       width: 55%;
-      text-align: center;
-      padding-left: 1ch;
+      padding-top: 3ch;
     }
 
     .skills{
