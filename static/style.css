@@ -441,6 +441,26 @@ h2{
     #content-mobile{
       display: block;
     }
+
+   /*the resume page design */
+   .resume-page{
+     margin-top:7.5%;
+     margin-left:5%;
+     margin-right: 5%;
+     border: 2px solid black;
+     color:var(--textColor);
+   }
+   .title-resume{
+     font-size: 130%;
+     width:100%;
+     text-align: center;
+     border: 2px solid red;
+   }
+   .certifi,.langu{
+     height: 15%;
+     width:15%;
+     margin-right: 15px;
+   }
 }
 
   @media only screen and (min-width: 800px) {
@@ -811,8 +831,6 @@ h2{
         font-size: 300%;
         text-align: center;
         border: 2px solid red;
-
-
       }
       .certifi,.langu{
         height: 15%;
