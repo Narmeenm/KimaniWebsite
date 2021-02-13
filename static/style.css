@@ -471,16 +471,26 @@ h2{
    }
    h4{
      font-size:1.3em;
-     border: 2px solid gray;
+
      padding-bottom: 5%;
    }
+
    .cv-Certificates{
      grid-area:cv-Certificates;
-     border:2px solid green;
    }
+
    .cv-Languages{
      grid-area:cv-Languages;
      padding-bottom:7%;
+   }
+   .lang-list{
+     padding-left:3%;
+     border-spacing: 1ch 2ch;
+     border:2px solid black;
+
+   }
+   .advanced{
+    width:60%;
    }
    .cv-workExperince{
      grid-area:cv-workExperince;
@@ -492,8 +502,11 @@ h2{
    }
    .cv-Education{
      grid-area:cv-Education;
+   }
 
-     border:5px solid red;
+   .fa-briefcase ,.fa-graduation-cap{
+     margin-right: 0.6ch;
+     font-size: 1.1em;
    }
    .certifi-list{
      padding-bottom: 5%;

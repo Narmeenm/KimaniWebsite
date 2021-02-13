@@ -108,14 +108,13 @@
   .DescrClick .popuptext {
     visibility: hidden;
     background: var(--textColor);
-    width: 270%;
+    width: 300%;
     border-radius: 6px;
-    padding: 1ch 1ch;
+    padding: 0.5ch 0.5ch;
     position: absolute;
     z-index: 1;
-    top: -20px;
-    left: 27%;
-    margin-left: -300px;
+    top: 2.5ch;
+    margin-left: -375px;
   }
   .DescrClick .show {
     visibility: visible;
@@ -125,7 +124,7 @@
   .jobDesc1{
     background: var(--textColor);
     color: var(--bgcolor);
-    font-size: 18px;
+    font-size: 1em;
     list-style-type:disc;
     list-style-position:outside;
     text-align:left;
