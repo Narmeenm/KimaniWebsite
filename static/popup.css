@@ -309,7 +309,6 @@
     }
     .jobDesc1 li{
       padding-bottom: 8%;
-      border: 1px solid black;
       width:100%;
     }
     .jobDesc4{
@@ -324,7 +323,6 @@
 
     .jobDesc4 li{
       padding-bottom: 8%;
-      border: 1px solid black;
       width:100%;
     }
 
@@ -335,7 +333,7 @@
       padding-right: 9%;
       padding-top: 9%;
       text-align: left;
-      border: 1px solid black;
+      line-height: 27px;
     }
     .popuptext .EduPopup{
       color: var(--bgcolor);
@@ -345,6 +343,6 @@
       padding-top: 9%;
       padding-bottom: 9%;
       text-align: left;
-      border: 1px solid black;
+      line-height: 27px;
     }
 }
