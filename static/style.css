@@ -316,7 +316,6 @@ h2{
        position: absolute;
        left:6.5ch;
        top:9ch;
-       border: 1px solid black;
      }
 
 
@@ -325,7 +324,7 @@ h2{
       position: relative;
     }
     .language4 .fourthLang{
-      border: 1px solid green;/* do this border none */
+      border: none;/* do this border none */
       cursor: pointer;
       background:transparent;
       position: absolute;
@@ -355,7 +354,6 @@ h2{
     }
     .certificates7 p{
       padding-top: 2.5ch;
-      border: 1px solid brown;
     }
     .experience5{
       grid-area: experience5;
@@ -373,7 +371,6 @@ h2{
       padding-top:1ch;
     }
     .experience5 p{
-      border: 2px solid black;
       width: 55%;
       padding-top: 3ch;
     }
@@ -486,7 +483,6 @@ h2{
    .lang-list{
      padding-left:3%;
      border-spacing: 1ch 2ch;
-     border:2px solid black;
 
    }
    .advanced{

@@ -63,13 +63,11 @@
     background-color:var(--bgcolor);
     color: var(--textColor);
     border-radius: 6px;
-
     padding: 1ch 1ch;
     position: absolute;
     z-index: 1;
     top: 10ch;
     left:0.1ch;
-
   }
 
 
@@ -133,12 +131,12 @@
   }
   .jobDesc1 li{
     padding-bottom: 8%;
-    border: 1px solid black;
     width:100%;
+    line-height: 2.2ch;
   }
   .jobDesc4{
     color: var(--bgcolor);
-    font-size: 14px;
+    font-size: 16px;
     list-style-type:disc;
     list-style-position:outside;
     text-align:left;
@@ -148,28 +146,27 @@
 
   .jobDesc4 li{
     padding-bottom: 8%;
-    border: 1px solid black;
     width:100%;
   }
 
   .popuptext .DescPopup4{
     color: var(--bgcolor);
-    font-size: 18px;
+    font-size: 16px;
     padding-left:5%;
     padding-right: 9%;
     padding-top: 9%;
     text-align: left;
-    border: 1px solid black;
+    line-height: 2.5ch;
   }
   .popuptext .EduPopup{
     color: var(--bgcolor);
-    font-size: 14px;
+    font-size: 16px;
     padding-left:5%;
     padding-right: 9%;
     padding-top: 9%;
     padding-bottom: 9%;
     text-align: left;
-    border: 1px solid black;
+    line-height: 2.5ch;
   }
 }
 @media only screen and (min-width: 1000px) {
